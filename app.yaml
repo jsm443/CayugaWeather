@@ -1,0 +1,8 @@
+runtime: python39  # Specify the Python runtime version
+
+entrypoint: gunicorn -b :$PORT main:server  # Replace 'main' with the name of your Python file without the .py extension
+
+env_variables:
+  # Environment variables (if any)
+
+# You can configure other App Engine settings here as needed
